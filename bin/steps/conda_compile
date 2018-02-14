@@ -11,7 +11,7 @@ fi
 
 if [ -f conda-requirements.txt ]; then
     puts-step "Installing dependencies using Conda"
-    conda install --file conda-requirements.txt --yes --channel https://"analytics.functional@ge.com":AKCp5Zm7qz7qbEW6GRWd5oDRYg7UXrC9wttezmZMf8aTK94GhCkVePTvHfrPBz3W7sEKs6zGn@artifactory.predix.io/artifactory/api/pypi/dataservices-python/simple | indent
+    conda install --file conda-requirements.txt --yes | indent
 fi
 
 if [ -f requirements.txt ]; then
